@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive social media website</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+      <nav>
+        <div class="container">
+            <h2 class="log">Connecting</h2>
+            <div class="searchbar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search for creators inspiration and project">
+                
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profilepic">
+                    <img src="logo.jpeg" alt="logo">
+                </div>
+            </div>
+        </div>
+      </nav>
+      <main>
+        <div class="container">
+            <div class="left">
+                <a class="profile">
+                    <div class="profilepic">
+                        <img src="self.jpg" alt="photo">
+                    </div>
+                    <div class="handle">
+                        <h4>Deepak Yadav</h4>
+                        <p class="text-muted">@Deepak</p>
+                    </div>
+                </a>
+                <!-- -----------sidebar---------- -->
+                <div class="sidebar">
+                  <a class="menu-item active">
+                    <span><i class="uil uil-estate"></i></span><h3>Home</h3>
+                 </a>
+                 <a class="menu-item"><span><i class="uil uil-compass"></i></span><h3>Explore</h3>
+                </a>
+                <a class="menu-item" id=" message-notifications"> <span><i class="uil uil-bell"></i></span><h3>Notifications</h3>
+                    <!-- notification popup -->
+                    <div class="notification-pop">
+                        <div>
+                            <div class="profilepic">
+                                <img src="pp1.webp" alt="photo">
+                            </div>
+                            <div class="notification-body">
+                                <b>Abhram lincon</b> accepted your request
+                                <small class="text-muted">2 Days ago</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profilepic">
+                                <img src="pp8.jpeg" alt="photo">
+                            </div>
+                            <div class="notification-body">
+                                <b>Scarlett johnson</b> accepted your request
+                                <small class="text-muted">2 Days ago</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profilepic">
+                                <img src="pp9.jpeg" alt="photo">
+                            </div>
+                            <div class="notification-body">
+                                <b>Barak Obama</b> shared you a reel by memewala.
+                                <small class="text-muted">3 Days ago</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profilepic">
+                                <img src="pp3.webp" alt="photo">
+                            </div>
+                            <div class="notification-body">
+                                <b>MS Dhoni </b> accepted your request
+                                <small class="text-muted">2 Days ago</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profilepic">
+                                <img src="pp4.webp" alt="photo">
+                            </div>
+                            <div class="notification-body">
+                                <b>Adolf Hitler</b> commented on your post.
+                                <small class="text-muted">2 Days ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="menu-item" id="messages"> <span><i class="uil uil-message"></i></span><h3>Messssage</h3>
+                </a>
+                <a class="menu-item"> <span><i class="uil uil-bookmark"></i></span><h3>Bookmarks</h3>
+                </a>
+                <a class="menu-item">  <span><i class="uil uil-analytics"></i></span><h3>Analytics</h3>
+                </a>
+                <a class="menu-item">  <span><i class="uil uil-moon"></i></span><h3>Theme</h3>
+                </a>
+                <a class="menu-item">  <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
+                </a>
+                </div>
+               <!-- <---------------- end of sidbar----------->
+               <label for="create-post" class="btn btn-primary">Create Post</label>
+            </div>
+            <!-- ===========Middle============= -->
+            <div class="middle">
+               <div class="stories">
+                <div class="story">
+                    <div class="profilepic">
+                        <img src="12.jpeg" alt="story">
+                    </div>
+                    <p class="name">Your Story</p>
+                </div>
+                <div class="story">
+                    <div class="profilepic">
+                        <img src="13.jpeg" alt="story">
+                    </div>
+                    <p class="name">Pranav K</p>
+                </div>
+                <div class="story">
+                    <div class="profilepic">
+                        <img src="19.jpeg" alt="story">
+                    </div>
+                    <p class="name">Aditya M</p>
+                </div>
+                <div class="story">
+                    <div class="profilepic">
+                        <img src="24.jpeg" alt="story">
+                    </div>
+                    <p class="name">Arnold Scwh</p>
+                </div>
+                <div class="story">
+                    <div class="profilepic">
+                        <img src="25.webp" alt="story">
+                    </div>
+                    <p class="name">Elon Musk</p>
+                </div>
+               </div>
+               <!-- ==============End of story========== -->
+               <form class="create-post">
+                <div class="profilepic"> <img src="self.jpg " alt="photo"></div>
+               <input type="text" placeholder="What is in your mind, Deepak!" id="createpost">
+               <input type="submit" value="post" class="btn btn-primary">
+
+               </form>
+
+<!-- ------------------------------feed-------------------------------- -->
+             <div class="feeds">
+                <div class="feed">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profilepic">
+                                <img src="pp4.webp">
+                            </div>
+                            <div class="ingo">
+                                <h3>Barak Obama</h3>
+                                <small>USA , 14 minutes ago</small>
+                            </div>
+                        </div>
+                        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                    </div>
+                    <div class="photo">
+                        <img src="14.jpeg">
+                    </div>
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="uil uil-heart"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share-alt"></i></span>
+
+                        </div>
+                        <div class="bookmarks">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+                    <div class="liked-by">
+                        <span><img src="12.jpeg"></span>
+                        <span><img src="13.jpeg"></span>
+                        <span><img src="pp9.jpeg"></span>
+                        <p>Liked by<b> Osho</b> and<b> others</b>.</p>
+                    </div>
+                    <div class="caption">
+                        <p><b>Osho</b> Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    
+                        <div class="text-muted">View all 3000 comments.</div>
+                    
+                </div>
+<!-- ==========================end of feed===================== -->
+<div class="feed">
+    <div class="head">
+        <div class="user">
+            <div class="profilepic">
+                <img src="pp10.jpeg">
+            </div>
+            <div class="ingo">
+                <h3>Emma Watson</h3>
+                <small>California , 24 minutes ago</small>
+            </div>
+        </div>
+        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+    </div>
+    <div class="photo">
+        <img src="30.jpeg">
+    </div>
+    <div class="action-button">
+        <div class="interaction-button">
+            <span><i class="uil uil-heart"></i></span>
+            <span><i class="uil uil-comment"></i></span>
+            <span><i class="uil uil-share-alt"></i></span>
+
+        </div>
+        <div class="bookmarks">
+            <span><i class="uil uil-bookmark"></i></span>
+        </div>
+    </div>
+    <div class="liked-by">
+        <span><img src="12.jpeg"></span>
+        <span><img src="13.jpeg"></span>
+        <span><img src="pp9.jpeg"></span>
+        <p>Liked by<b> Harry</b> and<b> others</b>.</p>
+    </div>
+    <div class="caption">
+        <p><b>Emma</b> Lorem ipsum dolor sit amet.</p>
+    </div>
+    
+        <div class="text-muted">View all 3000 comments.</div>
+    
+</div>
+<div class="feed">
+    <div class="head">
+        <div class="user">
+            <div class="profilepic">
+                <img src="24.jpeg">
+            </div>
+            <div class="ingo">
+                <h3>Osho</h3>
+                <small>Pune, 44 minutes ago</small>
+            </div>
+        </div>
+        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+    </div>
+    <div class="photo">
+        <img src="31.webp">
+    </div>
+    <div class="action-button">
+        <div class="interaction-button">
+            <span><i class="uil uil-heart"></i></span>
+            <span><i class="uil uil-comment"></i></span>
+            <span><i class="uil uil-share-alt"></i></span>
+
+        </div>
+        <div class="bookmarks">
+            <span><i class="uil uil-bookmark"></i></span>
+        </div>
+    </div>
+    <div class="liked-by">
+        <span><img src="12.jpeg"></span>
+        <span><img src="13.jpeg"></span>
+        <span><img src="pp9.jpeg"></span>
+        <p>Liked by<b>Aristotle</b> and<b> others</b>.</p>
+    </div>
+    <div class="caption">
+        <p><b>Osho</b> Lorem ipsum dolor sit amet.</p>
+    </div>
+    
+        <div class="text-muted">View all 3000 comments.</div>
+    
+</div>
+<div class="feed">
+    <div class="head">
+        <div class="user">
+            <div class="profilepic">
+                <img src="pp9.jpeg">
+            </div>
+            <div class="ingo">
+                <h3>Albert Einstien</h3>
+                <small>Germany, 35 minutes ago</small>
+            </div>
+        </div>
+        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+    </div>
+    <div class="photo">
+        <img src="32.jpeg">
+    </div>
+    <div class="action-button">
+        <div class="interaction-button">
+            <span><i class="uil uil-heart"></i></span>
+            <span><i class="uil uil-comment"></i></span>
+            <span><i class="uil uil-share-alt"></i></span>
+
+        </div>
+        <div class="bookmarks">
+            <span><i class="uil uil-bookmark"></i></span>
+        </div>
+    </div>
+    <div class="liked-by">
+        <span><img src="12.jpeg"></span>
+        <span><img src="13.jpeg"></span>
+        <span><img src="pp9.jpeg"></span>
+        <p>Liked by<b> Stephen hawking</b> and<b> others</b>.</p>
+    </div>
+    <div class="caption">
+        <p><b>Einstien</b> Lorem ipsum dolor sit amet.</p>
+    </div>
+    
+        <div class="text-muted">View all 3000 comments.</div>
+    
+</div>
+<div class="feed">
+    <div class="head">
+        <div class="user">
+            <div class="profilepic">
+                <img src="pp9.jpeg">
+            </div>
+            <div class="ingo">
+                <h3>Stephen Hawking</h3>
+                <small>USA , 14 minutes ago</small>
+            </div>
+        </div>
+        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+    </div>
+    <div class="photo">
+        <img src="28.jpeg">
+    </div>
+    <div class="action-button">
+        <div class="interaction-button">
+            <span><i class="uil uil-heart"></i></span>
+            <span><i class="uil uil-comment"></i></span>
+            <span><i class="uil uil-share-alt"></i></span>
+
+        </div>
+        <div class="bookmarks">
+            <span><i class="uil uil-bookmark"></i></span>
+        </div>
+    </div>
+    <div class="liked-by">
+        <span><img src="12.jpeg"></span>
+        <span><img src="13.jpeg"></span>
+        <span><img src="16.jpeg"></span>
+        <p>Liked by<b> Osho</b> and<b> others</b>.</p>
+    </div>
+    <div class="caption">
+        <p><b>Stephen</b> Lorem ipsum dolor sit amet.</p>
+    </div>
+    
+        <div class="text-muted">View all 3000 comments.</div>
+    
+</div>
+<div class="feed">
+    <div class="head">
+        <div class="user">
+            <div class="profilepic">
+                <img src="pp5.webp">
+            </div>
+            <div class="ingo">
+                <h3>Adolf Hitler</h3>
+                <small>Germany, 44 minutes ago</small>
+            </div>
+        </div>
+        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+    </div>
+    <div class="photo">
+        <img src="18.webp">
+    </div>
+    <div class="action-button">
+        <div class="interaction-button">
+            <span><i class="uil uil-heart"></i></span>
+            <span><i class="uil uil-comment"></i></span>
+            <span><i class="uil uil-share-alt"></i></span>
+
+        </div>
+        <div class="bookmarks">
+            <span><i class="uil uil-bookmark"></i></span>
+        </div>
+    </div>
+    <div class="liked-by">
+        <span><img src="12.jpeg"></span>
+        <span><img src="13.jpeg"></span>
+        <span><img src="pp9.jpeg"></span>
+        <p>Liked by<b>plato</b> and<b> others</b>.</p>
+    </div>
+    <div class="caption">
+        <p><b>Fuhrerr</b> Lorem ipsum dolor sit amet.</p>
+    </div>
+    
+        <div class="text-muted">View all 3000 comments.</div>
+    
+</div>
+<div class="feed">
+    <div class="head">
+        <div class="user">
+            <div class="profilepic">
+                <img src="pp1.webp">
+            </div>
+            <div class="ingo">
+                <h3>Khabib </h3>
+                <small>Dagestan , 34 minutes ago</small>
+            </div>
+        </div>
+        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+    </div>
+    <div class="photo">
+        <img src="29.jpeg">
+    </div>
+    <div class="action-button">
+        <div class="interaction-button">
+            <span><i class="uil uil-heart"></i></span>
+            <span><i class="uil uil-comment"></i></span>
+            <span><i class="uil uil-share-alt"></i></span>
+
+        </div>
+        <div class="bookmarks">
+            <span><i class="uil uil-bookmark"></i></span>
+        </div>
+    </div>
+    <div class="liked-by">
+        <span><img src="12.jpeg"></span>
+        <span><img src="13.jpeg"></span>
+        <span><img src="pp9.jpeg"></span>
+        <p>Liked by<b> Conor Mccgregor</b> and<b> others</b>.</p>
+    </div>
+    <div class="caption">
+        <p><b>Khabib</b> Lorem ipsum dolor sit amet.</p>
+    </div>
+    
+        <div class="text-muted">View all 3000 comments.</div>
+    
+</div>
+
+             </div>
+            </div>
+            <div class="right">
+            <div class="messages" id="message-notification" >
+                  <div class="heading">
+                    <h4>Messages</h4><i class="uil uil-edit"></i>
+                  </div>
+                <!-- /*  =================search bar============*/ -->
+                <div class="searchbar">
+                    <i class="uil uil-search"></i>
+                       <input type="search" placeholder="Search Messages" id="message-search">
+                </div>
+                 <!-- /*  =================catogery============*/ -->
+                 <div class="catogery">
+                    <h6 class="active">Primary</h6>
+                    <h6>General</h6>
+                    <h6 class="message-request">Request(7)</h6>
+                 </div>
+                 <!-- ---------------------message----------------- -->
+                 <div class="message" >
+                    <div class="profilepic">
+                        <img src="pp8.jpeg">
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Valamdir Putin</h5>
+                        <p class="text-muted">Meet me at 6'o clock bro</p>
+                    </div>
+                </div>
+                 <div class="message">
+                    <div class="profilepic">
+                        <img src="13.jpeg">
+                    </div>
+                    <div class="message-body">
+                        <h5>Smriti Mandhana</h5>
+                        <p class="text-muted">Hey, whats'up.</p>
+                    </div>
+                </div>
+                 <div class="message">
+                    <div class="profilepic">
+                        <img src="19.jpeg">
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Scarlett</h5>
+                        <p class="text-muted">Meet me at 6'o clock.</p>
+                    </div>
+                </div>
+                 <div class="message">
+                    <div class="profilepic">
+                        <img src="pp9.jpeg">
+                    </div>
+                    <div class="message-body">
+                        <h5>Elon Musk</h5>
+                        <p class="text-muted"><b>Happy birthday </b> bro</p>
+                    </div>
+                </div>
+                 <div class="message">
+                    <div class="profilepic">
+                        <img src="pp4.webp">
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Fuhrerr</h5>
+                        <p class="text-muted">Lets meet in party tonight.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------end of message------------- -->
+
+
+
+
+
+
+            <!-- --------------------friend request--------------------------- -->
+            <div class="friend-requests">
+                <h4>Requests</h4>
+                <div class="request">
+                    <div class="info">
+                        <div class="profilepic">
+                            <img src="pp5.webp">
+                        </div>
+                        <div>
+                            <h5>Justin Biber</h5>
+                            <p class="muted-text">8 mutual friends</p>
+
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">Accept</button>
+                        <button class="btn">Decline</button>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="info">
+                        <div class="profilepic">
+                            <img src="24.jpeg">
+                        </div>
+                        <div>
+                            <h5>Laura</h5>
+                            <p class="muted-text">12 mutual friends</p>
+
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">Accept</button>
+                        <button class="btn">Decline</button>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="info">
+                        <div class="profilepic">
+                            <img src="19.jpeg">
+                        </div>
+                        <div>
+                            <h5>Rahul</h5>
+                            <p class="muted-text">83 mutual friends</p>
+
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">Accept</button>
+                        <button class="btn">Decline</button>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+      </main>
+      <!-- ===================================================Theme customization========= -->
+      <div class="customize-theme">
+        <div class="card">
+          <h2>Customize your View</h2>
+          <p clas="text-muted">Manage your font-size, color and background</p>
+<!-- -----------------------------font-size=============================== -->
+          <div class="font-size">
+            <h4>Font-size</h4>
+            <div>
+                <h6>Aa</h6>
+                <div class="choose-size">
+                    <span class="font-size-1 active"></span>
+                    <span class="font-size-2"></span>
+                    <span class="font-size-3"></span>
+                    <span class="font-size-4"></span>
+                    <span class="font-size-5"></span>
+                    
+                </div>
+                <h3>Aa</h3>
+            </div>
+          </div>
+
+          <!-- ===================================primary color============ -->
+          <div class="color">
+            <h4>color</h4>
+            <div class="choose-color">
+                <span class="color-1 active"></span>
+                <span class="color-2"></span>
+                <span class="color-3"></span>
+                <span class="color-4"></span>
+                <span class="color-5"></span>
+            </div>
+          </div>
+          <!-- ----------------------background color--------------------- -->
+
+          <div class="background">
+                 <h4>background</h4>
+                 <div class="choose-bg active">
+                    <div class="bg-1">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Light out</h5>
+                    </div>
+
+
+                 </div>
+          </div>
+        </div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
